@@ -8,6 +8,6 @@ var userSchema = new Schema({
   age: { type: number, default: 0 },
   favourites: [string],
   marks: [number],
-  password: { type: string, min: 5, max: 15 },
-  createdAt: { type: Date, default: date },
+  password: { type: string, minlength: 5, maxlength: 15 },
+  createdAt: { type: Date, default: new Date() },
 });
